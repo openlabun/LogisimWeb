@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ feature/add-server ]
+    branches: [ main ]
 
 jobs:
   build:
