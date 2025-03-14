@@ -20,8 +20,8 @@ jobs:
           cd /home/proyecto/LogisimWeb/
           git pull origin main
           git status
-          docker stop logisimweb-app
-          docker rm logisimweb-app
+          docker stop logisimweb
+          docker rm logisimweb
           docker build -t logisimweb-image .
-          docker run -dit -p 5014:3000 --restart unless-stopped --name logisimweb-app logisimweb-image
+          docker run -dit -p 5014:3000 --restart unless-stopped --name logisimweb logisimweb-image
           
