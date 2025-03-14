@@ -24,3 +24,4 @@ jobs:
           docker rm logisimweb-app
           docker build -t logisimweb-image .
           docker run -dit -p 5014:3000 --restart unless-stopped --name logisimweb logisimweb-image
+          
